@@ -210,14 +210,14 @@ theorem conj_idem :
 
 
 ------------------------------------------------
--- Top, Bottom
+-- Bottom, Top
 ------------------------------------------------
-
-theorem true_top :
-  P → True  := by
 
 theorem false_bottom :
   False → P
+
+theorem true_top :
+  P → True  := by
 
 
 end propositional
