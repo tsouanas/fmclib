@@ -2,6 +2,7 @@ section propositional
 
 variable (P Q R : Prop)
 
+
 ------------------------------------------------
 -- Double negation
 ------------------------------------------------
@@ -77,6 +78,15 @@ theorem lem_irrefutable :
 
 theorem peirce_law_weak :
   ((P → Q) → P) → ¬¬P  := by
+  sorry
+
+
+------------------------------------------------
+-- Linearity of →
+------------------------------------------------
+
+theorem impl_linear :
+  (P → Q) ∨ (Q → P)  := by
   sorry
 
 
@@ -185,13 +195,30 @@ theorem weaken_conj_left :
   (P ∧ Q) → Q  := by
   sorry
 
-theorem conj_idempot :
+
+------------------------------------------------
+-- Idempotence of ∨,∧
+------------------------------------------------
+
+theorem disj_idem :
+  (P ∨ P) ↔ P  := by
+  sorry
+
+theorem conj_idem :
   (P ∧ P) ↔ P := by
   sorry
 
-theorem disj_idempot :
-  (P ∨ P) ↔ P  := by
-  sorry
+
+------------------------------------------------
+-- Top, Bottom
+------------------------------------------------
+
+theorem true_top :
+  P → True  := by
+
+theorem false_bottom :
+  False → P
+
 
 end propositional
 
@@ -303,5 +330,6 @@ theorem exists_conj_as_conj_exists_converse :
   sorry
 
 ---------------------------------------------- -/
+
 
 end predicate
