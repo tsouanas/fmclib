@@ -319,6 +319,44 @@ theorem forall_disj_as_disj_forall_converse :
   sorry
 
 
+end predicate
+
+------------------------------------------------
+
+section bonus
+
+------------------------------------------------
+--  Drinker's paradox
+------------------------------------------------
+
+variable (D : U → Prop)
+
+-- There is a person p such that:
+-- if p drinks, then everybody drinks
+-- p: «person»
+-- D x: «x drinks»
+theorem drinker :
+  ∃ p, (D p → ∀ x, D x)  := by
+  sorry
+
+------------------------------------------------
+--  Russell's paradox
+------------------------------------------------
+
+variable (S : U → U → Prop)
+
+-- It is impossible to have a barber b such that
+-- b shaves exactly those people who do not shave themselves
+-- b: «barber»
+-- S x y: «x shaves y»
+theorem russell :
+  ¬ ∃ b, ∀ x, (S b x ↔ ¬ S x x)  := by
+  sorry
+
+
+end bonus
+
+
 /- NOT THEOREMS --------------------------------
 
 theorem forall_disj_as_disj_forall :
@@ -330,6 +368,3 @@ theorem exists_conj_as_conj_exists_converse :
   sorry
 
 ---------------------------------------------- -/
-
-
-end predicate
