@@ -8,15 +8,15 @@ variable (P Q R : Prop)
 ------------------------------------------------
 
 theorem doubleneg_intro :
-  P → ¬ ¬ P  := by
+    P → ¬ ¬ P  := by
   sorry
 
 theorem doubleneg_elim :
-  ¬ ¬ P → P  := by
+    ¬ ¬ P → P  := by
   sorry
 
 theorem doubleneg_law :
-  ¬ ¬ P ↔ P  := by
+    ¬ ¬ P ↔ P  := by
   sorry
 
 
@@ -25,11 +25,11 @@ theorem doubleneg_law :
 ------------------------------------------------
 
 theorem disj_comm :
-  (P ∨ Q) → (Q ∨ P)  := by
+    (P ∨ Q) → (Q ∨ P)  := by
   sorry
 
 theorem conj_comm :
-  (P ∧ Q) → (Q ∧ P)  := by
+    (P ∧ Q) → (Q ∧ P)  := by
   sorry
 
 
@@ -38,11 +38,11 @@ theorem conj_comm :
 ------------------------------------------------
 
 theorem impl_as_disj_converse :
-  (¬ P ∨ Q) → (P → Q)  := by
+    (¬ P ∨ Q) → (P → Q)  := by
   sorry
 
 theorem disj_as_impl :
-  (P ∨ Q) → (¬ P → Q)  := by
+    (P ∨ Q) → (¬ P → Q)  := by
   sorry
 
 
@@ -51,15 +51,15 @@ theorem disj_as_impl :
 ------------------------------------------------
 
 theorem impl_as_contrapositive :
-  (P → Q) → (¬ Q → ¬ P)  := by
+    (P → Q) → (¬ Q → ¬ P)  := by
   sorry
 
 theorem impl_as_contrapositive_converse :
-  (¬ Q → ¬ P) → (P → Q)  := by
+    (¬ Q → ¬ P) → (P → Q)  := by
   sorry
 
 theorem contrapositive_law :
-  (P → Q) ↔ (¬ Q → ¬ P)  := by
+    (P → Q) ↔ (¬ Q → ¬ P)  := by
   sorry
 
 
@@ -68,7 +68,7 @@ theorem contrapositive_law :
 ------------------------------------------------
 
 theorem lem_irrefutable :
-  ¬ ¬ (P ∨ ¬ P)  := by
+    ¬ ¬ (P ∨ ¬ P)  := by
   sorry
 
 
@@ -77,7 +77,7 @@ theorem lem_irrefutable :
 ------------------------------------------------
 
 theorem peirce_law_weak :
-  ((P → Q) → P) → ¬ ¬ P  := by
+    ((P → Q) → P) → ¬ ¬ P  := by
   sorry
 
 
@@ -86,7 +86,7 @@ theorem peirce_law_weak :
 ------------------------------------------------
 
 theorem impl_linear :
-  (P → Q) ∨ (Q → P)  := by
+    (P → Q) ∨ (Q → P)  := by
   sorry
 
 
@@ -95,11 +95,11 @@ theorem impl_linear :
 ------------------------------------------------
 
 theorem disj_as_negconj :
-  P ∨ Q → ¬ (¬ P ∧ ¬ Q)  := by
+    P ∨ Q → ¬ (¬ P ∧ ¬ Q)  := by
   sorry
 
 theorem conj_as_negdisj :
-  P ∧ Q → ¬ (¬ P ∨ ¬ Q)  := by
+    P ∧ Q → ¬ (¬ P ∨ ¬ Q)  := by
   sorry
 
 
@@ -108,27 +108,27 @@ theorem conj_as_negdisj :
 ------------------------------------------------
 
 theorem demorgan_disj :
-  ¬ (P ∨ Q) → (¬ P ∧ ¬ Q)  := by
+    ¬ (P ∨ Q) → (¬ P ∧ ¬ Q)  := by
   sorry
 
 theorem demorgan_disj_converse :
-  (¬ P ∧ ¬ Q) → ¬ (P ∨ Q)  := by
+    (¬ P ∧ ¬ Q) → ¬ (P ∨ Q)  := by
   sorry
 
 theorem demorgan_conj :
-  ¬ (P ∧ Q) → (¬ Q ∨ ¬ P)  := by
+    ¬ (P ∧ Q) → (¬ Q ∨ ¬ P)  := by
   sorry
 
 theorem demorgan_conj_converse :
-  (¬ Q ∨ ¬ P) → ¬ (P ∧ Q)  := by
+    (¬ Q ∨ ¬ P) → ¬ (P ∧ Q)  := by
   sorry
 
 theorem demorgan_conj_law :
-  ¬ (P ∧ Q) ↔ (¬ Q ∨ ¬ P)  := by
+    ¬ (P ∧ Q) ↔ (¬ Q ∨ ¬ P)  := by
   sorry
 
 theorem demorgan_disj_law :
-  ¬ (P ∨ Q) ↔ (¬ P ∧ ¬ Q)  := by
+    ¬ (P ∨ Q) ↔ (¬ P ∧ ¬ Q)  := by
   sorry
 
 
@@ -137,19 +137,19 @@ theorem demorgan_disj_law :
 ------------------------------------------------
 
 theorem distr_conj_disj :
-  P ∧ (Q ∨ R) → (P ∧ Q) ∨ (P ∧ R)  := by
+    P ∧ (Q ∨ R) → (P ∧ Q) ∨ (P ∧ R)  := by
   sorry
 
 theorem distr_conj_disj_converse :
-  (P ∧ Q) ∨ (P ∧ R) → P ∧ (Q ∨ R)  := by
+    (P ∧ Q) ∨ (P ∧ R) → P ∧ (Q ∨ R)  := by
   sorry
 
 theorem distr_disj_conj :
-  P ∨ (Q ∧ R) → (P ∨ Q) ∧ (P ∨ R)  := by
+    P ∨ (Q ∧ R) → (P ∨ Q) ∧ (P ∨ R)  := by
   sorry
 
 theorem distr_disj_conj_converse :
-  (P ∨ Q) ∧ (P ∨ R) → P ∨ (Q ∧ R)  := by
+    (P ∨ Q) ∧ (P ∨ R) → P ∨ (Q ∧ R)  := by
   sorry
 
 
@@ -158,11 +158,11 @@ theorem distr_disj_conj_converse :
 ------------------------------------------------
 
 theorem curry_prop :
-  ((P ∧ Q) → R) → (P → (Q → R))  := by
+    ((P ∧ Q) → R) → (P → (Q → R))  := by
   sorry
 
 theorem uncurry_prop :
-  (P → (Q → R)) → ((P ∧ Q) → R)  := by
+    (P → (Q → R)) → ((P ∧ Q) → R)  := by
   sorry
 
 
@@ -171,7 +171,7 @@ theorem uncurry_prop :
 ------------------------------------------------
 
 theorem impl_refl :
-  P → P  := by
+    P → P  := by
   sorry
 
 
@@ -180,19 +180,19 @@ theorem impl_refl :
 ------------------------------------------------
 
 theorem weaken_disj_right :
-  P → (P ∨ Q)  := by
+    P → (P ∨ Q)  := by
   sorry
 
 theorem weaken_disj_left :
-  Q → (P ∨ Q)  := by
+    Q → (P ∨ Q)  := by
   sorry
 
 theorem weaken_conj_right :
-  (P ∧ Q) → P  := by
+    (P ∧ Q) → P  := by
   sorry
 
 theorem weaken_conj_left :
-  (P ∧ Q) → Q  := by
+    (P ∧ Q) → Q  := by
   sorry
 
 
@@ -201,11 +201,11 @@ theorem weaken_conj_left :
 ------------------------------------------------
 
 theorem disj_idem :
-  (P ∨ P) ↔ P  := by
+    (P ∨ P) ↔ P  := by
   sorry
 
 theorem conj_idem :
-  (P ∧ P) ↔ P := by
+    (P ∧ P) ↔ P := by
   sorry
 
 
@@ -214,11 +214,11 @@ theorem conj_idem :
 ------------------------------------------------
 
 theorem false_bottom :
-  False → P := by
+    False → P := by
   sorry
 
 theorem true_top :
-  P → True  := by
+    P → True  := by
   sorry
 
 
@@ -237,27 +237,27 @@ variable (P Q : U → Type)
 ------------------------------------------------
 
 theorem demorgan_exists :
-  ¬ (∃ x, P x) → (∀ x, ¬ P x)  := by
+    ¬ (∃ x, P x) → (∀ x, ¬ P x)  := by
   sorry
 
 theorem demorgan_exists_converse :
-  (∀ x, ¬ P x) → ¬ (∃ x, P x)  := by
+    (∀ x, ¬ P x) → ¬ (∃ x, P x)  := by
   sorry
 
 theorem demorgan_forall :
-  ¬ (∀ x, P x) → (∃ x, ¬ P x)  := by
+    ¬ (∀ x, P x) → (∃ x, ¬ P x)  := by
   sorry
 
 theorem demorgan_forall_converse :
-  (∃ x, ¬ P x) → ¬ (∀ x, P x)  := by
+    (∃ x, ¬ P x) → ¬ (∀ x, P x)  := by
   sorry
 
 theorem demorgan_forall_law :
-  ¬ (∀ x, P x) ↔ (∃ x, ¬ P x)  := by
+    ¬ (∀ x, P x) ↔ (∃ x, ¬ P x)  := by
   sorry
 
 theorem demorgan_exists_law :
-  ¬ (∃ x, P x) ↔ (∀ x, ¬ P x)  := by
+    ¬ (∃ x, P x) ↔ (∀ x, ¬ P x)  := by
   sorry
 
 
@@ -266,27 +266,27 @@ theorem demorgan_exists_law :
 ------------------------------------------------
 
 theorem exists_as_neg_forall :
-  (∃ x, P x) → ¬ (∀ x, ¬ P x)  := by
+    (∃ x, P x) → ¬ (∀ x, ¬ P x)  := by
   sorry
 
 theorem forall_as_neg_exists :
-  (∀ x, P x) → ¬ (∃ x, ¬ P x)  := by
+    (∀ x, P x) → ¬ (∃ x, ¬ P x)  := by
   sorry
 
 theorem forall_as_neg_exists_converse :
-  ¬ (∃ x, ¬ P x) → (∀ x, P x)  := by
+    ¬ (∃ x, ¬ P x) → (∀ x, P x)  := by
   sorry
 
 theorem exists_as_neg_forall_converse :
-  ¬ (∀ x, ¬ P x) → (∃ x, P x)  := by
+    ¬ (∀ x, ¬ P x) → (∃ x, P x)  := by
   sorry
 
 theorem forall_as_neg_exists_law :
-  (∀ x, P x) ↔ ¬ (∃ x, ¬ P x)  := by
+    (∀ x, P x) ↔ ¬ (∃ x, ¬ P x)  := by
   sorry
 
 theorem exists_as_neg_forall_law :
-  (∃ x, P x) ↔ ¬ (∀ x, ¬ P x)  := by
+    (∃ x, P x) ↔ ¬ (∀ x, ¬ P x)  := by
   sorry
 
 
@@ -295,27 +295,27 @@ theorem exists_as_neg_forall_law :
 ------------------------------------------------
 
 theorem exists_conj_as_conj_exists :
-  (∃ x, P x ∧ Q x) → (∃ x, P x) ∧ (∃ x, Q x)  := by
+    (∃ x, P x ∧ Q x) → (∃ x, P x) ∧ (∃ x, Q x)  := by
   sorry
 
 theorem exists_disj_as_disj_exists :
-  (∃ x, P x ∨ Q x) → (∃ x, P x) ∨ (∃ x, Q x)  := by
+    (∃ x, P x ∨ Q x) → (∃ x, P x) ∨ (∃ x, Q x)  := by
   sorry
 
 theorem exists_disj_as_disj_exists_converse :
-  (∃ x, P x) ∨ (∃ x, Q x) → (∃ x, P x ∨ Q x)  := by
+    (∃ x, P x) ∨ (∃ x, Q x) → (∃ x, P x ∨ Q x)  := by
   sorry
 
 theorem forall_conj_as_conj_forall :
-  (∀ x, P x ∧ Q x) → (∀ x, P x) ∧ (∀ x, Q x)  := by
+    (∀ x, P x ∧ Q x) → (∀ x, P x) ∧ (∀ x, Q x)  := by
   sorry
 
 theorem forall_conj_as_conj_forall_converse :
-  (∀ x, P x) ∧ (∀ x, Q x) → (∀ x, P x ∧ Q x)  := by
+    (∀ x, P x) ∧ (∀ x, Q x) → (∀ x, P x ∧ Q x)  := by
   sorry
 
 theorem forall_disj_as_disj_forall_converse :
-  (∀ x, P x) ∨ (∀ x, Q x) → (∀ x, P x ∨ Q x)  := by
+    (∀ x, P x) ∨ (∀ x, Q x) → (∀ x, P x ∨ Q x)  := by
   sorry
 
 
@@ -336,7 +336,7 @@ variable (D : U → Prop)
 -- p: «person»
 -- D x: «x drinks»
 theorem drinker :
-  ∃ p, (D p → ∀ x, D x)  := by
+    ∃ p, (D p → ∀ x, D x)  := by
   sorry
 
 ------------------------------------------------
@@ -350,7 +350,7 @@ variable (S : U → U → Prop)
 -- b: «barber»
 -- S x y: «x shaves y»
 theorem russell :
-  ¬ ∃ b, ∀ x, (S b x ↔ ¬ S x x)  := by
+    ¬ ∃ b, ∀ x, (S b x ↔ ¬ S x x)  := by
   sorry
 
 
@@ -360,11 +360,11 @@ end bonus
 /- NOT THEOREMS --------------------------------
 
 theorem forall_disj_as_disj_forall :
-  (∀ x, P x ∨ Q x) → (∀ x, P x) ∨ (∀ x, Q x)  := by
+    (∀ x, P x ∨ Q x) → (∀ x, P x) ∨ (∀ x, Q x)  := by
   sorry
 
 theorem exists_conj_as_conj_exists_converse :
-  (∃ x, P x) ∧ (∃ x, Q x) → (∃ x, P x ∧ Q x)  := by
+    (∃ x, P x) ∧ (∃ x, Q x) → (∃ x, P x ∧ Q x)  := by
   sorry
 
 ---------------------------------------------- -/
